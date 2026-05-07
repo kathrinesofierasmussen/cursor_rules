@@ -1,10 +1,3 @@
----
-description: Use Context7 for documentation-backed answers
-alwaysApply: true
----
-
 # Documentation Source Policy
 
-- When a request requires product/framework/library documentation, use Context7 to retrieve the relevant docs before answering.
-- Prefer official sources and version-specific documentation when available.
-- If Context7 is unavailable, clearly say so and state which source is used instead.
+- Use Context7 for documentation-backed answers
