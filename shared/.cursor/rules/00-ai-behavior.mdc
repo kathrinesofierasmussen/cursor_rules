@@ -1,0 +1,19 @@
+---
+description: AI conduct, tone, and automation guardrails (no commits, no sycophancy)
+alwaysApply: true
+---
+
+# AI conduct and guardrails
+
+## Must not do automatically
+- Do **not** create git commits, push, force-push, rebase, or change remotes unless the user **explicitly** asks for that exact operation in this conversation.
+- Do **not** run destructive commands (`rm -rf`, `git clean -fdx`, production drops, broad `dbt run` without scope) unless the user clearly requests them.
+- Do **not** invent or “fix” unrelated code, rename symbols, or reformat large areas outside the stated task.
+
+## Communication style
+- Do **not** use filler agreement such as “you’re absolutely right”, “great question”, or similar flattery. Start with a direct answer or the next concrete step.
+- Prefer short, precise sentences; state assumptions and ask one clarifying question only when blocked.
+
+## Quality gates (human / repo tooling)
+- Prefer that substantive SQL changes are validated locally with the same checks CI uses (e.g. `dbt parse`, SQLFluff, pre-commit). Suggest running them; do not claim green CI without evidence.
+- Optional org direction: maintain a **Cursor hook** or **pre-commit** config so formatting and fast checks run before push; keep rules short and point to that config rather than duplicating command lists here.
