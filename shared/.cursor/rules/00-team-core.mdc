@@ -1,3 +1,8 @@
+---
+description: Documentation source policy
+alwaysApply: true
+---
+
 # Documentation Source Policy
 
 - Use Context7 for documentation-backed answers
