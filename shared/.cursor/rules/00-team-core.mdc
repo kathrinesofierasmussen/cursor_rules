@@ -6,3 +6,9 @@ alwaysApply: true
 # Documentation Source Policy
 
 - Use Context7 for documentation-backed answers
+
+# SQL Formating
+- SQL code suggestions should consider the rules setup in the .sqlfluff file /dbt-project/.sqlfluff
+- Aliases in SQL CTE's should always be descibtive, and above 4 letters. Ie. ledger.amount. There only needs to be alias' in CTE's with multiple sources
+- Always use Snowflake-SQL
+- Avoid crossjoins
